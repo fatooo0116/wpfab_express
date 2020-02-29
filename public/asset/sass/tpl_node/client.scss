@@ -1,0 +1,130 @@
+
+.our_client .client:nth-child(4n){
+        a:before{
+            display: none;
+        }
+    }
+.our_client{
+    max-width: 1100px;
+    margin:auto;;
+    display: flex;
+    flex-wrap: wrap;
+    .client{
+        width: 25%;
+        margin-bottom: 35px;
+        a{
+            padding:33px 0;
+            display: block;
+            max-width: 235px;
+            margin:auto;
+            text-align: center;
+            position: relative;
+            &:before{
+                display: block;
+                content: "";
+                position: absolute;
+                top: 0;;
+                opacity: 0.3;
+                height: 100%;
+                right: -20px;
+                width: 1px;
+                border-right: 1px solid #eaeaea;                
+            }
+
+            &:after{
+                opacity: 0.3;
+                display: block;
+                content: "";
+                position: absolute;
+                width: 100%;
+                bottom: -20px;
+                height: 1px;
+                border-bottom: 1px solid #eaeaea;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .our_client .client:nth-child(3n){
+        a:before{
+            display: none;
+        }
+    }
+    .our_client .client:nth-child(4n){
+        a:before{
+            display: block;
+        }
+    }
+    .our_client{
+        max-width: 768px;
+        .client{
+            width:33.333%;
+            a{
+                max-width: 216px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 769px){
+
+    .our_client .client:nth-child(3n){
+        a:before{
+            display: block;
+        }
+    }
+    .our_client .client:nth-child(2n){
+        a:before{
+            display: none;
+        }
+    }
+
+    .our_client .client:nth-child(4n){
+        a:before{
+   //         display: block;
+        }
+    }
+
+    .our_client{
+        max-width: 420px;
+        .client{
+            width:50%;
+            a{
+                max-width: 170px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    .our_client .client:nth-child(2n){
+        a:before{
+            display: none;
+        }
+    }
+
+    .our_client{
+        max-width: 420px;
+        .client{
+            width:50%;
+            a{
+                max-width: 140px;
+                padding: 28px 0;
+                &:before{
+                    right: -24px;
+                }
+                &:after{
+                    bottom: -18px;
+                }
+            }
+
+            &:last-child{
+                a:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

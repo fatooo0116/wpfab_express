@@ -1,0 +1,116 @@
+header{
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    top:0;
+    position: absolute;
+    z-index: 110;
+    -webkit-backface-visibility: hidden;
+    // transition: 0.5s;;
+    transition: 0s;;   
+    top:0;
+
+    &.fixed{       
+        position: fixed;
+        width: 100%;;
+        top:-100px;
+        transition: 0s;; 
+        
+        height:60px;
+
+        &.sw{
+            top:0px;
+            transition: 1s;;  
+            background: #000;
+        } 
+        .q_logo{ height:60px; }
+        .q_logo img{
+            height:50px;
+        }
+        
+        nav.main_menu ul li{ height:60px;}
+    }
+
+    .header_inner{
+        padding: 0 45px;
+    }
+
+    &.header_bottom {
+        padding: 0 45px;
+        background-color: #fff;
+        -webkit-transition: all .2s ease 0s;
+        -moz-transition: all .2s ease 0s;
+        -o-transition: all .2s ease 0s;
+        transition: all .2s ease 0s;
+    }
+
+    .q_logo {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        a{
+            display: flex;
+            height: 100%;
+            align-items: center;
+            img{
+                display:block;
+                height: 70px;
+            }
+        }
+        img {
+            display: block;
+            opacity: 1;                   
+            width: auto!important;
+            max-width: none;
+            -webkit-transition: opacity .6s ease-in-out;
+            transition: opacity .6s ease-in-out;
+            height:80px;
+            width:auto;
+        }
+    }
+
+    
+
+
+    .header_inner_left {
+        position: absolute;
+        left: 45px;
+        top: 0;
+    }
+
+    .mobile_menu_button {
+        display: none;
+        float: left;
+        height: 100px;
+        margin: 0 20px 0 0;
+    }
+}
+
+.logo_wrapper {
+    height: 100px;
+    float: left;
+}
+
+
+nav.main_menu{
+    float:right;
+    ul{
+        display: flex;
+        li{
+            height:100px;
+            display: flex;
+            align-items: center;
+            a{
+                padding: 8px 20px;
+                color:#fff;
+                font-size:15px;
+                letter-spacing: 1px;;
+
+                &.current{
+                    background-color: #53f6c7;
+                    color:#000;
+                }
+            }
+        }
+    }
+}

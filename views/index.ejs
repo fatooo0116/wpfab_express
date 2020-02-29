@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  </head>
+  <body>
+    <div class="wrapper">
+        <%- include('tpl/header'); -%>
+          <div  id="main" class="wrapper_inner">
+            <%- include('tpl/section1'); -%>
+            <%- include('tpl/section2'); -%>
+            <%- include('tpl/section3'); -%>
+
+            <%- include('tpl/event1'); -%>
+            <%- include('tpl/section4'); -%>            
+            <%- include('tpl/section5'); -%>
+          </div><!--  wrapper inner  -->
+        <%- include('tpl/footer'); -%>
+    </div>
+  </body>
+</html>
