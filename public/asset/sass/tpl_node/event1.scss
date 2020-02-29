@@ -8,5 +8,81 @@
         margin-left:auto;
         margin-right:auto;
         min-height:637px;
+        display: flex;;     
+        
+        .w50{
+            display:flex;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            h3{
+                width:100%;
+                color: #ffffff;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 45px;
+                line-height: 50px;
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: -2px;
+                text-transform: none;
+            }
+            .sep{
+               // width:100%;
+            }
+            .ivox{
+                width:100%;
+                font-size:18px;
+                line-height: 27px;;
+                padding-top:30px;
+                .q_icon_list{
+                    margin-bottom:5px;
+                    position: relative;
+                    padding-left:25px;
+                    &:before{
+                        top:8px;
+                        left: 1px;;
+                        transform: scale(0.8);
+                        content:"";
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;;
+                        background-color: #53f6c7;;
+                    }
+                }
+            }
+        } /*  w50 */
+        .w70{
+           display: flex;
+           align-items: center; 
+           .qt_box{
+            padding: 95px 0 95px 0;
+            position: relative;
+            overflow: hidden;
+            a{
+                display:block;
+                position: relative;
+                overflow: hidden;
+                transition: 0.5s;
+                background:none;
+                img{
+                    display: block;
+                    width: 100%;
+                    transform: scale(1);
+                    transition: 0.3s;
+                    opacity: 1;;
+                }
+
+                &:hover{
+                    transition: 0.3s;
+                    background:#fff;
+                    img{
+                        opacity: 0.9;;
+                        transform: scale(1.3);
+                    }
+                }
+            }
+           }
+        }
     }
 }

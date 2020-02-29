@@ -1,0 +1,30 @@
+#aboutus{
+    position: relative;
+    .pic{
+        max-width: 83%;;
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+    .info-panel{
+        width:40%;
+        position: absolute;
+        right:0;
+        box-sizing: border-box;;
+        z-index: 9;
+        top:300px;
+        background-color: #2a2830;
+        padding: 29px 24% 52px 6%;
+        h3{
+            color: #fff;
+            
+            font-size: 45px;
+            line-height: 50px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: -2px;
+            text-transform: none;        
+        }
+    }
+}

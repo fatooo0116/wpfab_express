@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">  
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  </head>
+  <body class="userxdoor">
+    <div class="wrapper ">
+        <%- include('./tpl/header'); -%>
+
+
+        <div id="userxdoor_admin">        
+            <div class="left_menu">
+                <aside class="menu">
+                    <p class="menu-label">
+                      General
+                    </p>
+                    <ul class="menu-list">
+                      <li><a>Dashboard</a></li>
+                      <li><a>Customers</a></li>
+                    </ul>
+                    <p class="menu-label">
+                      Administration
+                    </p>
+                    <ul class="menu-list">
+                      <li><a>Team Settings</a></li>
+                      <li>
+                        <a class="is-active">Manage Your Team</a>
+                        <ul>
+                          <li><a>Members</a></li>
+                          <li><a>Plugins</a></li>
+                          <li><a>Add a member</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Invitations</a></li>
+                      <li><a>Cloud Storage Environment Settings</a></li>
+                      <li><a>Authentication</a></li>
+                    </ul>
+                    <p class="menu-label">
+                      Transactions
+                    </p>
+                    <ul class="menu-list">
+                      <li><a>Payments</a></li>
+                      <li><a>Transfers</a></li>
+                      <li><a>Balance</a></li>
+                    </ul>
+                  </aside>
+            </div>
+
+            <div class="box"  id="main">
+                    main
+            </div><!--  box -->
+        </div>
+
+
+        <%- include('./tpl/footer'); -%>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </div>
+  </body>
+</html>

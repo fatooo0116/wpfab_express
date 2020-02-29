@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">  
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  </head>
+  <body class="userxdoor">
+    <div class="wrapper ">
+        <%- include('./tpl/header'); -%>
+        <div id="userxdoor_login">        
+            <form   action="/userxdoor/admin">
+              <section  class="section">
+                <div class="container">
+                  <h1 class="title">
+                    <span>&lt;b&gt;</span>
+                    Hello
+                    <span>&lt;/b&gt;</span>
+                  </h1>
+
+                  <p class="login-box">
+                        <div class="field">                          
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Account...">
+                          </div>
+                        </div>
+                        <div class="field">                          
+                          <div class="control">
+                            <input class="input" type="password" placeholder="Pass..">
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <button  type="submit"  class="button is-primary"  style="height: 2.25em; padding: calc(.375em - 1px) .75em;" >
+                              <strong>Enter</strong>
+                            </button>
+                          </div>
+                        </div>
+                  </p>
+                </div>
+              </section>
+            </form>
+         </div><!--  id="userxdoor_login" -->
+
+        <%- include('./tpl/footer'); -%>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </div>
+  </body>
+</html>

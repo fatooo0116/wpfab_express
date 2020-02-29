@@ -21,8 +21,25 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+/*  Mysql */
+var mysql = require("mysql");
+
+var con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "root",
+    database: "wpfab_db"
+});
+app.use(function(req, res, next) {
+  req.con = con;
+  next();
+});
+/*  Mysql End */
+
+
+
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/userxdoor', usersRouter);
 app.use('/works', worksRouter);
 app.use('/blogs', blogsRouter);
 

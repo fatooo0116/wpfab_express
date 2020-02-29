@@ -6,9 +6,15 @@
 @import "tpl_node/header";
 @import "tpl_node/footer";
 
+
 @import "tpl_node/header_mobile";
 @import "tpl_node/section";
 @import "tpl_node/reset";
 @import "tpl_node/page";
 @import "tpl_node/client";
 @import "tpl_node/event1";
+@import "tpl_node/about";
+@import "tpl_node/projects";
+
+@import "tpl_admin/login";
+@import "tpl_admin/admin";
